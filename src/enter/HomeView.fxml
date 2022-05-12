@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="550.0" style="-fx-background-color: #FFF0F5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="14.0" prefHeight="61.0" prefWidth="539.0" text="SduFoodPoint" textFill="#f06262">
+         <font>
+            <Font name="Cambria Bold Italic" size="48.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="32.0" layoutY="85.0" text="Today: " textFill="#ff6800">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="30.0" layoutY="242.0" prefHeight="35.0" prefWidth="314.0" text="Today, birthday of your colleague(s): " textFill="#ff6800">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="160.0" text="PLACE" textFill="#ff6800">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuButton alignment="CENTER" layoutX="185.0" layoutY="161.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" textFill="#ff6800">
+        <items>
+          <MenuItem mnemonicParsing="false" text="RED CANTEEN" />
+          <MenuItem mnemonicParsing="false" text="EAT &amp; CHAT" />
+            <MenuItem mnemonicParsing="false" text="SDU MARKET" />
+            <MenuItem mnemonicParsing="false" text="RED COFFEE" />
+            <MenuItem mnemonicParsing="false" text="AC CATERING" />
+        </items>
+      </MenuButton>
+      <Label layoutX="32.0" layoutY="198.0" text="PAYMENT TYPE" textFill="#ff6800">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <MenuButton alignment="CENTER" layoutX="185.0" layoutY="199.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: white;" textFill="#ff6800">
+         <items>
+            <MenuItem mnemonicParsing="false" text="QR" />
+            <MenuItem mnemonicParsing="false" text="CASH" />
+            <MenuItem mnemonicParsing="false" text="CARD" />
+            <MenuItem mnemonicParsing="false" text="TRANSFER" />
+         </items>
+      </MenuButton>
+      <ImageView fitHeight="361.0" fitWidth="219.0" layoutX="328.0" layoutY="75.0">
+         <image>
+            <Image url="@../img/mickey-clipart-birthday.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="today" contentDisplay="CENTER" layoutX="185.0" layoutY="85.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: white;" text=" " textFill="#ff6800">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="birthdayTable" editable="true" layoutX="32.0" layoutY="285.0" prefHeight="150.0" prefWidth="287.0" style="-fx-border-color: #F08080;" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="empNameColumn" prefWidth="71.199951171875" text="Name" />
+            <TableColumn fx:id="empLastNameColumn" prefWidth="106.39996337890625" text="LastName" />
+            <TableColumn fx:id="empPositionColumn" prefWidth="94.40003967285156" text="Position" />
+         </columns>
+      </TableView>
+      <Button layoutX="324.0" layoutY="285.0" mnemonicParsing="false" onAction="#searchBirthday" prefHeight="150.0" prefWidth="26.0" style="-fx-background-color: f06262;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

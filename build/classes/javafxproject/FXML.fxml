@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxproject.FXMLController">
+   <children>
+      <AnchorPane layoutX="302.0" prefHeight="500.0" prefWidth="397.0">
+         <children>
+            <TextField fx:id="username" layoutX="126.0" layoutY="192.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #cd853f;" />
+            <FontAwesomeIconView fill="PERU" glyphName="USER" layoutX="100.0" layoutY="211.0" size="18" />
+            <PasswordField fx:id="password" layoutX="127.0" layoutY="252.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #cd853f; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIconView fill="PERU" glyphName="KEY" layoutX="100.0" layoutY="271.0" size="18" />
+            <Button fx:id="loginButton" layoutX="94.0" layoutY="327.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="214.0" style="-fx-background-color: #cd853f;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text fill="PERU" layoutX="78.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SduFoodPoint">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button layoutX="353.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#close_app" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fill="PERU" glyphName="CLOSE" size="18" text="" />
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #cd853f;">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Instagram-y-Restaurantes.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

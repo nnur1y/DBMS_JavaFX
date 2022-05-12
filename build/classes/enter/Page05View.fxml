@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="550.0" style="-fx-background-color: #FFB6C1;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page05Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="125.0" prefHeight="62.0" prefWidth="409.0" text="Places Information" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="22.0" layoutY="25.0">
+         <image>
+            <Image url="@../img/1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="416.0" layoutY="331.0">
+         <image>
+            <Image url="@../img/2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="225.0" layoutY="25.0">
+         <image>
+            <Image url="@../img/3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="416.0" layoutY="185.0">
+         <image>
+            <Image url="@../img/4.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="416.0" layoutY="25.0">
+         <image>
+            <Image url="@../img/5.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="placeTable" editable="true" layoutX="76.0" layoutY="185.0" prefHeight="262.0" prefWidth="297.0" style="-fx-border-color: #F08080; -fx-background-color: FFFFF0;" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="place_idColumn" prefWidth="82.39995956420898" text="Places_id" />
+            <TableColumn fx:id="nameColumn" prefWidth="104.0" text="Name" />
+            <TableColumn fx:id="floorColumn" prefWidth="93.60005187988281" text="Floor" />
+         </columns>
+      </TableView>
+      <Button fx:id="SearchPlaceBtn" layoutX="48.0" layoutY="185.0" mnemonicParsing="false" onAction="#searchPlace" prefHeight="262.0" prefWidth="20.0" text="Button" />
+   </children>
+</AnchorPane>

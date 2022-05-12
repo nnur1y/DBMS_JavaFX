@@ -1,0 +1,16 @@
+
+.parent {
+    -fx-background-color: #fff
+}
+.sidebar {
+    -fx-background-color: gray
+}
+.bt {
+    -fx-background-color: #FF6347;
+    -fx-border-color: white;
+}
+.bt:hover {
+    -fx-background-color: #FF0000;
+}
+.box {   
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="550.0" style="-fx-background-color: FFFFF0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Page04Controller">
+   <children>
+      <TextField fx:id="foodIdText" layoutX="308.0" layoutY="24.0" prefHeight="27.0" prefWidth="74.0" promptText="ID" style="-fx-border-color: #F08080;" />
+      <Button fx:id="searchEmpBtn" layoutX="410.0" layoutY="24.0" mnemonicParsing="false" onAction="#searchMenu" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #F08080;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="updateMailBtn" layoutX="412.0" layoutY="67.0" mnemonicParsing="false" onAction="#updateMenuPrice" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #F08080;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextArea fx:id="resultArea" layoutX="30.0" layoutY="373.0" prefHeight="66.0" prefWidth="388.0" promptText="Result Console" style="-fx-border-color: #F08080;" wrapText="true" />
+      <TextField fx:id="newPriceText" layoutX="309.0" layoutY="66.0" prefHeight="27.0" prefWidth="74.0" promptText="price" style="-fx-border-color: #F08080;" />
+      <Label layoutX="252.0" layoutY="71.0" prefHeight="18.0" prefWidth="39.0" text="Price" />
+      <Button fx:id="addMenuBtn" layoutX="467.0" layoutY="147.0" mnemonicParsing="false" onAction="#insertMenu" prefHeight="26.0" prefWidth="35.0" style="-fx-background-color: #F08080;" text="+" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="menuTable" editable="true" layoutX="28.0" layoutY="197.0" prefHeight="168.0" prefWidth="388.0" style="-fx-border-color: #F08080; -fx-background-color: FFFFF0;" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="foodIdColumn" prefWidth="27.200042724609375" text="Id" />
+          <TableColumn fx:id="TitleColumn" prefWidth="62.4000244140625" text="Title" />
+          <TableColumn fx:id="PositionColumn" prefWidth="73.60003662109375" text="Position" />
+            <TableColumn fx:id="amountColumn" minWidth="6.0" prefWidth="73.59996032714844" text="Amount" />
+            <TableColumn fx:id="priceColumn" prefWidth="60.0" text="Price" />
+            <TableColumn fx:id="placeIdColumn" prefWidth="77.5999755859375" text="Place" />
+        </columns>
+      </TableView>
+      <Button fx:id="searchMenuBtn" layoutX="249.0" layoutY="109.0" mnemonicParsing="false" onAction="#searchMenus" prefHeight="26.0" prefWidth="238.0" style="-fx-background-color: #F08080;" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="idText" layoutX="26.0" layoutY="148.0" prefHeight="26.0" prefWidth="39.0" promptText="id" style="-fx-border-color: #F08080;" />
+      <TextField fx:id="titleText" layoutX="65.0" layoutY="148.0" prefHeight="26.0" prefWidth="67.0" promptText="title" style="-fx-border-color: #F08080;" />
+      <TextField fx:id="positionText" layoutX="132.0" layoutY="148.0" prefHeight="26.0" prefWidth="80.0" promptText="position" style="-fx-border-color: #F08080;" />
+      <TextField fx:id="priceText" layoutX="294.0" layoutY="148.0" prefHeight="26.0" prefWidth="79.0" promptText="price" style="-fx-border-color: #F08080;" />
+      <TextField fx:id="amountText" layoutX="212.0" layoutY="148.0" prefHeight="26.0" prefWidth="82.0" promptText="amount" style="-fx-border-color: #F08080;" />
+      <Separator layoutX="28.0" layoutY="183.0" prefHeight="6.0" prefWidth="462.0" />
+      <ImageView fitHeight="112.0" fitWidth="206.0" layoutX="28.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/menu.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="252.0" layoutY="28.0" prefHeight="18.0" prefWidth="35.0" text="ID" />
+      <Label layoutX="428.0" layoutY="221.0" prefHeight="18.0" prefWidth="79.0" text="Place:" textFill="RED" />
+      <Label layoutX="428.0" layoutY="323.0" prefHeight="18.0" prefWidth="105.0" text="3) SduMarket" textFill="RED" />
+      <Label layoutX="428.0" layoutY="288.0" prefHeight="18.0" prefWidth="105.0" text="2) Eat&amp;Chat" textFill="RED" />
+      <Label layoutX="428.0" layoutY="254.0" prefHeight="18.0" prefWidth="79.0" text="1) Canteen" textFill="RED" />
+      <Label layoutX="428.0" layoutY="359.0" prefHeight="18.0" prefWidth="105.0" text="4) RedCoffee" textFill="RED" />
+      <Label layoutX="429.0" layoutY="398.0" prefHeight="18.0" prefWidth="105.0" text="5) AcCatering" textFill="RED" />
+      <TextField fx:id="placeIdText" layoutX="374.0" layoutY="148.0" prefHeight="26.0" prefWidth="79.0" promptText="place_id" style="-fx-border-color: #F08080;" />
+   </children>
+</AnchorPane>
